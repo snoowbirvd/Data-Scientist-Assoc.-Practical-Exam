@@ -1,6 +1,7 @@
 # DSA Practical Exam
 Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Practical-Exam/blob/62cdec419d676ac7ebe4ba0650c76f2b9befa1ad/house_sales.csv)
-Dataset Tasks: 
+
+Dataset Tasks: ![Housesales.pdf]([https://github.com/snoowbirvd/Data-Scientist-Assoc.-Practical-Exam/blob/62cdec419d676ac7ebe4ba0650c76f2b9befa1ad/house_sales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Practical-Exam/blob/4cec6b5ba27b3b2b1ed312c8db211d599325d5c8/Practical%20Exam.pdf))
 
 **Project Instructions:**
 - The object you have been asked to create will be graded, not the code.
