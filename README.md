@@ -1,8 +1,6 @@
 # DSA Practical Exam
 Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Practical-Exam/blob/62cdec419d676ac7ebe4ba0650c76f2b9befa1ad/house_sales.csv)
 
-Dataset Tasks: ![Housesales.pdf]([https://github.com/snoowbirvd/Data-Scientist-Assoc.-Practical-Exam/blob/62cdec419d676ac7ebe4ba0650c76f2b9befa1ad/house_sales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Practical-Exam/blob/4cec6b5ba27b3b2b1ed312c8db211d599325d5c8/Practical%20Exam.pdf))
-
 **Project Instructions:**
 - The object you have been asked to create will be graded, not the code.
 - Ensure you match any column name or object requirements.
@@ -13,17 +11,21 @@ Dataset Tasks: ![Housesales.pdf]([https://github.com/snoowbirvd/Data-Scientist-A
 Submission/Grading Objective:
 
 **All required data has been created and has the required columns**
-   - My assessment: All of the columns should match of what DataCamp have asked to follow
+   - My assessment: All of the columns should match a specific values/data types that DataCamp have asked to follow
 
 **Task 1: Identify and replace missing values.**
-   - My assessment: Show how you identify standard or non-standard missing values (there are other unexpected format) in a specific column and replace them based on what value DataCamp have asked
+   - My assessment:
+      - Show how I identify standard or non-standard missing values (there are other unexpected format) in a specific column and replace them based on what specific value DataCamp have asked.
+      - Doing a holistic data quality inspection per column helps me to see what needs to clean e.g checking missing value patterns, unique values analsis
 
 **Task 2: Identify and replace missing values.**
-   - My assessment: Show how you identify standard or non-standard missing values (there are other unexpected format) in a specific column and replace them based on what value DataCamp have asked
+   - My assessment:
+      - Show how I identify standard or non-standard missing values for each column and clean them based on what specific value DataCamp have asked
+      - Doing a holistic data quality inspection per column helps me to see what needs to clean e.g checking missing value patterns, unique values analsis
 
 Task 2: Clean categorical and text data by manipulating strings.
-
-Do you know what categories are meant to be possible in each column in your data? Are they the only categories that are actually there? If you have extra categories because of spelling mistakes or differences in capitalisation, your analysis may end up being wrong.
+   - My Assessment:
+      - Doing a holistic data quality inspection per column helps me to see what needs to clean e.g Capitalization and Spelling Analysis
 
 Task 2: Convert values between data types.
 
