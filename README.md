@@ -1,8 +1,37 @@
-# Housing Price Prediction Model Analysis
+# DSA Practical Exam
 Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Practical-Exam/blob/62cdec419d676ac7ebe4ba0650c76f2b9befa1ad/house_sales.csv)
+Dataset Tasks: 
+
+**Project Instructions:**
+- The object you have been asked to create will be graded, not the code.
+- Ensure you match any column name or object requirements.
+- The fit of your models will be compared to held back values from the test set provided to you. We will calculate the Root Mean Squared Error of your predictions.
+- At least one of your two models must have a Root Mean Squared Error below 30,000 to pass
+- All required data has been created and has the required columns
+
+Submission/Grading Objective:
+
+**All required data has been created and has the required columns**
+   - My assessment: All of the columns should match of what DataCamp have asked to follow
+
+**Task 1: Identify and replace missing values.**
+   - My assessment: Show how you identify standard or non-standard missing values (there are other unexpected format) in a specific column and replace them based on what value DataCamp have asked
+
+**Task 2: Identify and replace missing values.**
+   - My assessment: Show how you identify standard or non-standard missing values (there are other unexpected format) in a specific column and replace them based on what value DataCamp have asked
+
+Task 2: Clean categorical and text data by manipulating strings.
+
+Do you know what categories are meant to be possible in each column in your data? Are they the only categories that are actually there? If you have extra categories because of spelling mistakes or differences in capitalisation, your analysis may end up being wrong.
+
+Task 2: Convert values between data types.
+
+Task 3: Aggregate numeric, categorical variables and dates by groups.
+
+Task 4 & 5: Implement standard modeling approaches for supervised learning problems.
 
 ## Project Context
-Successfully completed and passed this assessment on the second attempt. The assessment consisted of five main tasks:
+I successfully completed and passed this assessment on attempt 2/2. The assessment consisted of five main tasks:
 
 ### Assessment Overview
 1. **Data Validation & Missing Values**
