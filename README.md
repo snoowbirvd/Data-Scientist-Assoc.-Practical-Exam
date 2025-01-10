@@ -7,7 +7,7 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
 - The fit of your models will be compared to held back values from the test set provided to you. We will calculate the Root Mean Squared Error of your predictions.
 - At least one of your two models must have a Root Mean Squared Error below 30,000 to pass
 - All required data has been created and has the required columns
-- Attempts 2/2
+- 2 Attempts to submit and grade 
 
 ### Initial Data Assessment
 **My Approach**: Before diving into specific tasks, I conducted a comprehensive data quality inspection to:
