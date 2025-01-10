@@ -10,7 +10,15 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
 - 2 Attempts to submit and grade 
 
 ### Initial Data Assessment
-**My Approach**: Before diving into specific tasks, I conducted a comprehensive data quality inspection to:
+**My Approach**: Before diving into specific tasks, I analyzed the overall goal of this project (although, its not the focus of the test, it's important that we com
+
+Goal: To help RealAgents optimize the listing prices of houses by predicting house sale prices based on their characteristics. By achieving this, RealAgents can reduce the time required to sell houses and improve competitiveness. This involves:
+
+- Cleaning and preparing the dataset for reliable analysis.
+- Exploring the relationship between house features (e.g., bedrooms, area, location) and sale price.
+- Building a baseline predictive model to estimate sale prices based on available features.
+
+Also, I conducted a comprehensive data quality inspection to:
 - Verify all required columns exist with correct data types
 - Understand the nature and extent of data quality issues
 - Plan the cleaning strategy based on actual data patterns
