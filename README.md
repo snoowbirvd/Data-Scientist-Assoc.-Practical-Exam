@@ -8,109 +8,88 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
 - At least one of your two models must have a Root Mean Squared Error below 30,000 to pass
 - All required data has been created and has the required columns
 
-Submission/Grading Objective:
+### Initial Data Assessment
+**My Approach**: Before diving into specific tasks, I conducted a comprehensive data quality inspection to:
+- Verify all required columns exist with correct data types
+- Understand the nature and extent of data quality issues
+- Plan the cleaning strategy based on actual data patterns
 
-**All required data has been created and has the required columns**
-   - My assessment: All of the columns should match a specific values/data types that DataCamp have asked to follow
+### Task 1: Missing Value Identification and Treatment
+**My Assessment & Strategy**:
+1. **Holistic Inspection Approach**
+   - Performed column-by-column quality analysis
+   - Discovered non-standard missing value patterns (e.g., dashes, N/A variations)
+   - Found that missing values weren't just NULL/NaN but included:
+     - Empty strings
+     - Various dash patterns (-, --, - -)
+     - Different NA formats (NA, N/A, na)
 
-**Task 1: Identify and replace missing values.**
-   - My assessment:
-      - Show how I identify standard or non-standard missing values (there are other unexpected format) in a specific column and replace them based on what specific value DataCamp have asked.
-      - Doing a holistic data quality inspection per column helps me to see what needs to clean e.g checking missing value patterns, unique values analsis
+2. **Column-Specific Findings**
+   - Numeric columns: Found both NULL values and potential placeholder zeros
+   - Text columns: Discovered multiple missing value representations
+   - Date columns: Identified invalid date formats and missing timestamps
 
-**Task 2: Identify and replace missing values.**
-   - My assessment:
-      - Show how I identify standard or non-standard missing values for each column and clean them based on what specific value DataCamp have asked
-      - Doing a holistic data quality inspection per column helps me to see what needs to clean e.g checking missing value patterns, unique values analsis
+3. **Treatment Strategy**
+   - Used column-appropriate replacement methods
+   - Considered data distribution when replacing values
+   - Documented all replacements for reproducibility
 
-Task 2: Clean categorical and text data by manipulating strings.
-   - My Assessment:
-      - Doing a holistic data quality inspection per column helps me to see what needs to clean e.g Capitalization and Spelling Analysis
+### Task 2: Data Cleaning and Type Conversion
+**My Assessment & Approach**:
 
-Task 2: Convert values between data types.
+1. **String Data Cleaning**
+   - Found inconsistencies in:
+     - Capitalization (NEW YORK, New york, new York)
+     - Spelling variations (Appartment vs Apartment)
+     - Extra spaces and special characters
+   - Standardized text formatting for consistency
 
-Task 3: Aggregate numeric, categorical variables and dates by groups.
+2. **Data Type Conversion Challenges**
+   - Identified mixed format dates
+   - Found numeric values stored as text
+   - Discovered categorical variables needing encoding
 
-Task 4 & 5: Implement standard modeling approaches for supervised learning problems.
+### Task 3: Data Aggregation
+**My Strategy**:
+- Identified logical grouping variables
+- Determined appropriate aggregation methods per column
+- Validated aggregated results for business sense
 
-## Project Context
-I successfully completed and passed this assessment on attempt 2/2. The assessment consisted of five main tasks:
+### Tasks 4 & 5: Model Implementation
+**My Approach to Modeling**:
+1. **Pre-modeling Analysis**
+   - Feature selection based on cleaned data
+   - Split data ensuring representative samples
+   - Established baseline metrics
 
-### Assessment Overview
-1. **Data Validation & Missing Values**
-   - Challenge encountered: Identifying non-standard missing value formats
-       - I found that some missing values containing or appearing as dashes (-) and some other unexpected format which I think is a good way to represent a real-world data scenario
-       - This makes us do some holistic data quality inspection before and after cleaning including checking Missing Value Patterns, unique values analysis, Capitalization and Spelling Analysis
+2. **Model Strategy**
+   - Focus on achieving RMSE < 30,000
+   - Selected models suitable for housing price prediction
+   - Implemented cross-validation for robust evaluation
 
-2. **String Manipulation & Categorical Data**
-   - Key Learning: The importance of standardization in categorical variables
-       - Discovered issues with inconsistent capitalization and spelling variations
-       - Learned to always check unique values in categorical columns before proceeding with analysis
-       - Real-world data rarely comes clean - careful string manipulation is crucial
+## Key Insights and Decisions
+1. **Data Quality**
+   - Missing data patterns varied significantly by column
+   - Text standardization was crucial for accurate analysis
+   - Date formats needed careful handling
 
-3. **Data Type Conversions & Aggregations**
-   - Critical Insights:
-       - Proper data type conversion is fundamental for accurate analysis
-       - Learned to carefully handle date formats and numeric conversions
-       - Understanding grouping operations helped in creating meaningful summaries
+2. **Modeling Considerations**
+   - Feature engineering importance
+   - Balance between model complexity and performance
+   - Focus on RMSE optimization
 
-4. **Base Model Implementation (Linear Regression)**
-   - Important Realizations:
-       - First attempt failed because I didn't display the final DataFrame
-       - Learned the importance of following output format requirements exactly
-       - Understanding preprocessing steps (especially OneHotEncoder for categorical variables)
-       - Gained insights on pipeline creation for reproducible modeling
+## Lessons Learned
+1. **Data Cleaning**
+   - Importance of thorough initial data inspection
+   - Value of systematic pattern detection
+   - Need for column-specific cleaning approaches
 
-5. **Advanced Model Comparison (Random Forest)**
-   - Key Success Factors:
-       - Built upon learnings from the base model implementation
-       - Proper handling of categorical variables through preprocessing pipeline
-       - Importance of displaying final predictions in required format
-       - Understanding model comparison methodology
+2. **Model Development**
+   - Feature selection impact on RMSE
+   - Importance of validation strategy
+   - Balance of model complexity vs performance
 
-## Critical Learnings from Failed First Attempt
-1. **Attention to Detail**
-    - Output format matters as much as model accuracy
-    - Always verify column names and DataFrame structure
-    - Double-check all requirements before submission
-
-2. **Data Preprocessing Importance**
-    - Real-world data requires thorough cleaning
-    - Never assume data is in standard format
-    - Document cleaning steps for reproducibility
-
-3. **Model Implementation**
-    - Start simple with base model
-    - Build complexity gradually
-    - Verify predictions format matches requirements
-
-## Personal Growth Areas
-1. **Technical Skills Enhanced**
-    - Improved data cleaning methodology
-    - Better understanding of sklearn Pipeline
-    - Learned to handle various data formats effectively
-
-2. **Problem-Solving Approach**
-    - Developed more systematic data validation process
-    - Improved attention to requirement details
-    - Better understanding of model comparison
-
-## Future Learning Goals
-1. **Expand Knowledge**
-    - Explore more advanced preprocessing techniques
-    - Learn additional modeling approaches
-    - Deepen understanding of feature engineering
-
-2. **Best Practices**
-    - Develop better documentation habits
-    - Create more robust validation checks
-    - Build more efficient data processing pipelines
-
-## Tools and Technologies Used
-- Python
-- pandas for data manipulation
-- scikit-learn for modeling
-- Pipeline for streamlined processing
-- Various preprocessing techniques
-
-*Note: This reflection documents my personal learning journey through this assessment, highlighting both challenges and growth opportunities.*
+## Future Improvements
+- Enhanced missing value detection patterns
+- More sophisticated text standardization
+- Additional feature engineering possibilities
