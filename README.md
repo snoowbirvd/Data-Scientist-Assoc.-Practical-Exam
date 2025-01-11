@@ -17,12 +17,9 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
    - Task 1 & 2 is about cleaning and preparing the dataset for reliable analysis
    - Task 3 is Exploring the relationship between house features (e.g., bedrooms, area, location) and sale price
    - Rask 4 & 5 is Building a baseline predictive model to estimate sale prices based on available features
-   - Overall, we are making this project to help RealAgents optimize the listing prices of houses by predicting house sale prices based on their characteristics
+   - Overall, this is to help RealAgents optimize the listing prices of houses by predicting house sale prices based on their characteristics
    
-2. Inspecting the dataframe and conducting a comprehensive data quality inspection
-   - Verify all required columns exist with correct data types
-   - Understand the nature and extent of data quality issues
-   - Plan the cleaning strategy based on actual data patterns
+2. Conducting a comprehensive dataframe inspection
 
 ### Task 1: Missing Value Identification and Treatment
 **My Assessment & Strategy**:
