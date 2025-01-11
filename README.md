@@ -41,7 +41,7 @@ Producing a table showing the difference in the average sale price by number of 
 
 **My Approach**:
   - Store in dataframe called `price_by_rooms`, groupby("bedrooms"), agg. the "sales price" by mean and variance and round the results by 1
-   - Visualy analyze the relationaship of bedroom (x) and average sales price/variance (y) with bar chart + trend  line (not part of the task)
+   - Visualize the relationaship of bedroom (x) and average sales price/variance (y) with bar chart + trend  line (not part of the task)
 
      
 In perspective, the goal of this task was to investigate the relationship between the number of bedrooms and house prices, focusing on two key metrics:
