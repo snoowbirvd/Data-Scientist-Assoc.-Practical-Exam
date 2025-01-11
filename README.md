@@ -15,16 +15,16 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
 **My Approach**: 2 things I practice before diving into the specific tasks
 1. Understanding the overall goal of this project (to properly absorb the approach and learnings to this case)
    - Task 1 & 2 is about cleaning and preparing the dataset for reliable analysis
-   - Task 3 is Exploring the relationship between house features (e.g., bedrooms, area, location) and sale price
-   - Rask 4 & 5 is Building a baseline predictive model to estimate sale prices based on available features
-   - Overall, this is to help RealAgents optimize the listing prices of houses by predicting house sale prices based on their characteristics
+   - Task 3 is exploring the relationship between house features (e.g., bedrooms, area, location) and sale price
+   - Rask 4 & 5 is building a baseline predictive model to estimate sale prices based on available features
+   - In perspective, this is to help optimize the listing prices of houses by predicting house sale prices based on their characteristics
    
-2. Conducting a comprehensive dataframe inspection
+2. Conducting a comprehensive dataframe inspection to have an overview of the data variables
 
-### Task 1 & 2:  Identify and replace missing values/Clean categorical and text data by manipulating strings
+### Task 1 & 2:  Identify and replace missing values/Clean categorical and text data by manipulating strings/Convert values between data types.
 **My Assessment & Strategy**:
 1. **Holistic Inspection Approach**
-   - Performed a for loop column-by-column quality analysis (I include unique values, potential missing value patterns, capitalization and spelling Analysis for object types, statistics for numeric Columns)
+   - Performed a for loop column-by-column quality analysis (I include unique values, potential missing value patterns, capitalization and spelling Analysis for object types, statistics for numeric columns)
 
    **Data Issues Identified:**
    - `city` column contained placeholder values (`'--'`) indicating missing data.
@@ -32,8 +32,10 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
    - `area` column stored numerical values as strings with units (`'sq.m.'`), making them unsuitable for analysis.
    - `months_listed` column had missing values.
    - `sale_date` column needed to ensure proper datetime formatting.
-
-### Task 3: Data Aggregation
+  
+   - After cleaning (via data imputation, string replacement and mapping and type conversion), I performed after inspection analysis to verify clean data
+     
+### Task 3: Aggregate numeric, categorical variables and dates by groups
 **My Strategy**:
 - Identified logical grouping variables
 - Determined appropriate aggregation methods per column
