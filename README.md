@@ -21,10 +21,10 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
    
 2. Conducting a comprehensive dataframe inspection
 
-### Task 1: Missing Value Identification and Treatment
+### Task 1 & 2: Missing Value Identification and Treatment
 **My Assessment & Strategy**:
 1. **Holistic Inspection Approach**
-   - Performed a for loop column-by-column quality analysis (I include unique values, Value Distribution, potential missing value patterns, Capitalization and Spelling Analysis for object types, Additional Statistics for Numeric Columns)
+   - Performed a for loop column-by-column quality analysis (I include unique values, potential missing value patterns, capitalization and spelling Analysis for object types, statistics for numeric Columns)
    - Discovered non-standard missing value patterns (e.g., dashes, N/A variations)
    - Found that missing values weren't just NULL/NaN but included:
      - Empty strings
@@ -36,13 +36,13 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
    - Text columns: Discovered multiple missing value representations
    - Date columns: Identified invalid date formats and missing timestamps
 
-### Task 2: Data Cleaning and Type Conversion
+### Task 1 & 2: Data Cleaning and Type Conversion
 **My Assessment & Approach**:
 
 1. **String Data Cleaning**
    - Found inconsistencies in:
-     - Capitalization (NEW YORK, New york, new York)
-     - Spelling variations (Appartment vs Apartment)
+     - Missing Value Patters on a numeric column [nan]
+     - Spelling variations ['Det.', 'Detached', 'Semi', 'Semi-detached', 'Terr.', 'Terraced']
      - Extra spaces and special characters
    - Standardized text formatting for consistency
 
