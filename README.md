@@ -1,5 +1,4 @@
 # DSA Practical Exam
-Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Practical-Exam/blob/62cdec419d676ac7ebe4ba0650c76f2b9befa1ad/house_sales.csv)
 
 **Project Instructions:**
 - Use Python to perform each of the tasks (5 Tasks).
