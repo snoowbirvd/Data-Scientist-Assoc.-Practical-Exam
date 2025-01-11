@@ -36,17 +36,18 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
    - After cleaning (via data imputation, string replacement and mapping and type conversion), I performed after inspection analysis to verify clean data
      
 ### Task 3: Aggregate numeric, categorical variables and dates by groups
-  - The task already advised that the number of bedrooms is the biggest driver of house price, so we don't have to do any EDA or addtional regression analysis
-  - This is the easiest task for me :). Actually, GPT 4 can accurately handle this with little guidance
-    
+The team at RealAgents have told you that they have always believed that the number of bedrooms is the biggest driver of house price. 
+Producing a table showing the difference in the average sale price by number of bedrooms along with the variance to investigate this question for the team.
+  - This is the probably the easiest task in terms of coding solution
+
 **My Approach**:
-  Store in dataframe called `price_by_rooms`
-   - groupby("bedrooms")
-   - agg. the "sales price" by mean and variance and round the results by 1
+  - Store in dataframe called `price_by_rooms`, groupby("bedrooms"), agg. the "sales price" by mean and variance and round the results by 1
+   - Visualy analyze the relationaship of bedroom (x) and average sales price/variance (y) with bar chart + trend  line (not part of the task)
+
      
 In perspective, the goal of this task was to investigate the relationship between the number of bedrooms and house prices, focusing on two key metrics:
-1. **Average Sale Price (`avg_price`)**: Helps determine the typical price of houses based on the number of bedrooms.
-2. **Variance in Sale Price (`var_price`)**: Indicates the spread or variability of house prices within each bedroom category.
+1. **Average Sale Price: Helps determine the typical price of houses based on the number of bedrooms.
+2. **Variance in Sale Price: Indicates the spread or variability of house prices within each bedroom category.
 
 ### Tasks 4 & 5: Model Implementation
 **My Approach to Modeling**:
