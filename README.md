@@ -14,7 +14,7 @@
 **My Approach**: 2 things I practice before diving into the specific tasks
 1. Understanding the overall goal of this project (to properly absorb the approach and learnings to this case)
    - Task 1 & 2 is about cleaning and preparing the dataset for reliable analysis
-   - Task 3 is exploring the relationship between house features (e.g., bedrooms, area, location) and sale price
+   - Task 3 is exploring the relationship between a specific house features and sale price. "bedrooms" (x) is identified as biggest driver in this task
    - Rask 4 & 5 is building a baseline predictive model to estimate sale prices based on available features
    - In perspective, this is to help optimize the listing prices of houses by predicting house sale prices based on their characteristics
    
