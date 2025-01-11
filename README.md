@@ -21,35 +21,17 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
    
 2. Conducting a comprehensive dataframe inspection
 
-### Task 1 & 2: Missing Value Identification and Treatment
+### Task 1 & 2:  Identify and replace missing values/Clean categorical and text data by manipulating strings
 **My Assessment & Strategy**:
 1. **Holistic Inspection Approach**
    - Performed a for loop column-by-column quality analysis (I include unique values, potential missing value patterns, capitalization and spelling Analysis for object types, statistics for numeric Columns)
-   - Discovered non-standard missing value patterns (e.g., dashes, N/A variations)
-   - Found that missing values weren't just NULL/NaN but included:
-     - Empty strings
-     - Various dash patterns (-, --, - -)
-     - Different NA formats (NA, N/A, na)
 
-2. **Column-Specific Findings**
-   - Numeric columns: Found both NULL values and potential placeholder zeros
-   - Text columns: Discovered multiple missing value representations
-   - Date columns: Identified invalid date formats and missing timestamps
-
-### Task 1 & 2: Data Cleaning and Type Conversion
-**My Assessment & Approach**:
-
-1. **String Data Cleaning**
-   - Found inconsistencies in:
-     - Missing Value Patters on a numeric column [nan]
-     - Spelling variations ['Det.', 'Detached', 'Semi', 'Semi-detached', 'Terr.', 'Terraced']
-     - Extra spaces and special characters
-   - Standardized text formatting for consistency
-
-2. **Data Type Conversion Challenges**
-   - Identified mixed format dates
-   - Found numeric values stored as text
-   - Discovered categorical variables needing encoding
+   **Data Issues Identified:**
+   - `city` column contained placeholder values (`'--'`) indicating missing data.
+   - `house_type` column had inconsistent abbreviations for house types.
+   - `area` column stored numerical values as strings with units (`'sq.m.'`), making them unsuitable for analysis.
+   - `months_listed` column had missing values.
+   - `sale_date` column needed to ensure proper datetime formatting.
 
 ### Task 3: Data Aggregation
 **My Strategy**:
