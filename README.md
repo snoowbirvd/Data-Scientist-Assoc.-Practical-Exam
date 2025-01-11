@@ -24,7 +24,7 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
 ### Task 1: Missing Value Identification and Treatment
 **My Assessment & Strategy**:
 1. **Holistic Inspection Approach**
-   - Performed column-by-column quality analysis
+   - Performed a for loop column-by-column quality analysis (I include unique values, Value Distribution, potential missing value patterns, Capitalization and Spelling Analysis for object types, Additional Statistics for Numeric Columns)
    - Discovered non-standard missing value patterns (e.g., dashes, N/A variations)
    - Found that missing values weren't just NULL/NaN but included:
      - Empty strings
@@ -35,11 +35,6 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
    - Numeric columns: Found both NULL values and potential placeholder zeros
    - Text columns: Discovered multiple missing value representations
    - Date columns: Identified invalid date formats and missing timestamps
-
-3. **Treatment Strategy**
-   - Used column-appropriate replacement methods
-   - Considered data distribution when replacing values
-   - Documented all replacements for reproducibility
 
 ### Task 2: Data Cleaning and Type Conversion
 **My Assessment & Approach**:
