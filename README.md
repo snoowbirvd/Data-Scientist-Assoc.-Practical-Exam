@@ -28,9 +28,9 @@ Dataset: [HouseSales.csv](https://github.com/snoowbirvd/Data-Scientist-Assoc.-Pr
 
    **Data Issues Identified:**
    - `city` column contained placeholder values (`'--'`) indicating missing data.
-   - `house_type` column had inconsistent abbreviations for house types.
+   - `house_type` column had inconsistent abbreviations for house types (e.g. semi:semi-detached, det:detached)
    - `area` column stored numerical values as strings with units (`'sq.m.'`), making them unsuitable for analysis.
-   - `months_listed` column had missing values.
+   - `months_listed` column had (`'nan'`) missing values pattern.
    - `sale_date` column needed to ensure proper datetime formatting.
   
    - After cleaning (via data imputation, string replacement and mapping and type conversion), I performed after inspection analysis to verify clean data
