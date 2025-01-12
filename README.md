@@ -7,22 +7,14 @@
 - Only 2 opportunities to submit the exam for grading
 - You must be successful in all tasks to pass this exam
 - The fit of your models will be compared to held back values from the test set provided to you. We will calculate the Root Mean Squared Error of your predictions.
-- At least one of your two models must have a Root Mean Squared Error below 30,000 to pass
-  
+- At least one of your two models must have a Root Mean Squared Error below 30,000 to pass  
 
 ### Initial Data Assessment
-**My Approach**: 2 things I practice before diving into the specific tasks
-1. Understanding the overall goal of this project (to properly absorb the approach and learnings to this case)
-   - Task 1 & 2 is about cleaning and preparing the dataset for reliable analysis
-   - Task 3 is exploring the relationship between a specific house features and sale price. "bedrooms" (x) is identified as biggest driver in this task
-   - Rask 4 & 5 is building a baseline predictive model to estimate sale prices based on available features
-   - In perspective, this is to help optimize the listing prices of houses by predicting house sale prices based on their characteristics
-   
-2. Conducting a comprehensive dataframe inspection to have an overview of the data variables
 
 ### Task 1 & 2:  Identify and replace missing values/Clean categorical and text data by manipulating strings/Convert values between data types.
 **My Assessment & Strategy**:
 1. **Holistic Inspection Approach**
+    - Conducting a comprehensive dataframe inspection to have an overview of the data variables
    - Performed a for loop column-by-column quality analysis (I include unique values, potential missing value patterns, capitalization and spelling Analysis for object types, statistics for numeric columns)
 
    **Data Issues Identified:**
@@ -35,23 +27,21 @@
    - After cleaning (via data imputation, string replacement and mapping and type conversion), I performed after inspection analysis to verify clean data
      
 ### Task 3: Aggregate numeric, categorical variables and dates by groups
-The team at RealAgents have told you that they have always believed that the number of bedrooms is the biggest driver of house price. 
-Producing a table showing the difference in the average sale price by number of bedrooms along with the variance to investigate this question for the team.
-  - This is the probably the easiest task in terms of coding solution
+Task Narrative: "The team at RealAgents have told you that they have always believed that the number of bedrooms is the biggest driver of house price.
+Producing a table showing the difference in the average sale price by number of bedrooms along with the variance to investigate this question for the team."
 
 **My Approach**:
   - Store in dataframe called `price_by_rooms`, groupby("bedrooms"), agg. the "sales price" by mean and variance and round the results by 1
    - Visualize the relationaship of bedroom (x) and average sales price/variance (y) with bar chart + trend  line (not part of the grading)
-
      
-In perspective, the goal of this task was to investigate the relationship between the number of bedrooms and house prices, focusing on two key metrics:
+This task was just to investigate the relationship between the number of bedrooms and house prices, focusing on two key metrics:
 1. **Average Sale Price: Helps determine the typical price of houses based on the number of bedrooms. 
 2. **Variance in Sale Price: Indicates the spread or variability of house prices within each bedroom category.
 
-### Task 4 & 5: Implement standard modeling approaches for supervised learning problems
+### Task 4: Implement standard modeling approaches for supervised learning problems
 
 We are asked to use new dataset, train.csv (not the house_sales.csv that we prep) and use validation.csv to predict new values. Show df results for x 'house_id', y 'price'
-Also, this is just focus on getting a baseline model working (no error metrics conducted
+Also, this is just focus on getting a baseline model working (no accuracy metrics conducted)
 
 **Task 4 approach**:
 
@@ -87,4 +77,37 @@ X_validation = validation_data.drop(columns=['house_id', 'sale_date'])
 ```
 validation_data['price'] = model.predict(X_validation)
 base_result = validation_data[['house_id', 'price']]
+```
+```
+Model Training Summary:
+Training data shape: (1200, 8)
+Validation data shape: (300, 8)
+
+Features used:
+Categorical: ['city', 'house_type']
+Numeric: ['months_listed', 'bedrooms', 'area']
+
+First few predictions:
+   house_id          price
+0   1331375  121527.827316
+1   1630115  304386.625267
+2   1645745  384760.100656
+3   1336775  123976.268985
+4   1888274  271186.199353
+```
+
+### Task 5: Implement standard modeling approaches for supervised learning problems
+Same data with Task 4 but we're going to fit a comparison using different model which is capable of capturing non-linear relationships and interactions, often resulting in better performance
+```
+Random Forest Model Summary:
+Training data shape: (1200, 8)
+Validation data shape: (300, 8)
+
+First few predictions:
+   house_id      price
+0   1331375   82582.62
+1   1630115  303256.87
+2   1645745  404809.08
+3   1336775  106624.68
+4   1888274  267768.22
 ```
