@@ -1,4 +1,5 @@
 # DSA Practical Exam
+Note: I didn't upload the notebook file here but here's the overview of how I approach the test
 
 **Project Instructions:**
 - Use Python to perform each of the tasks (5 Tasks).
