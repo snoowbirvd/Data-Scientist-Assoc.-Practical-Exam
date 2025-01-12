@@ -42,7 +42,7 @@ This task was just to investigate the relationship between the number of bedroom
 ### Task 4: Implement standard modeling approaches for supervised learning problems
 
 We are asked to use new dataset, train.csv (not the house_sales.csv that we prep) and use validation.csv to predict new values. Show df results for x 'house_id', y 'price'
-Also, this is just focus on getting a baseline model working (no accuracy metrics conducted)
+Also, this is just focus on getting a baseline model working
 
 **Task 4 approach**:
 
@@ -96,9 +96,10 @@ First few predictions:
 3   1336775  123976.268985
 4   1888274  271186.199353
 ```
+**9. Comparison to the test set provided**
 
 ### Task 5: Implement standard modeling approaches for supervised learning problems
-Same data with Task 4 but we're going to fit a comparison using different model which is capable of capturing non-linear relationships and interactions, often resulting in better performance
+Same data with Task 4 but we're going to fit a comparison using different model, which is capable of capturing non-linear relationships and interactions, check if it result in better performance
 ```
 Random Forest Model Summary:
 Training data shape: (1200, 8)
