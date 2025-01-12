@@ -57,7 +57,7 @@ Also, this is just focus on getting a baseline model working (no error metrics c
 
 **0. Define the Problem**
    - Target Variable (Y) is sales_price (continuous variable, making linear regression appropriate).
-   - Features (X): All columns except house_id, sale_price, and sale_date
+   - Features (X): All columns except house_id, sale_price, and sale_date (Need categorical encoding for object features)
    - import sklearn
      
 **1. Load the datasets**
@@ -70,14 +70,21 @@ validation_data = pd.read_csv('validation.csv')
 X_train = train_data.drop(columns=['house_id', 'sale_price', 'sale_date'])
 y_train = train_data['sale_price']
 ```
-**4. Create preprocessing pipeline**
+**4. Identify categorical column apply OneHotEncoder via preprocessing pipeline**
 
 **5. Create and train model pipeline**
+- Fitted the Pipeline (preprocessing + regression) to X_train and y_train
 
 **6. Fit the model**
-
+```
+model.fit(X_train, y_train)
+```
 **7. Prepare validation data**
-
-**8. Make predictions**
-
-**9. Create result dataframe**
+```
+X_validation = validation_data.drop(columns=['house_id', 'sale_date'])
+```
+**8. Make sample predictions and create result dataframe**
+```
+validation_data['price'] = model.predict(X_validation)
+base_result = validation_data[['house_id', 'price']]
+```
