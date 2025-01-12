@@ -41,48 +41,43 @@ Producing a table showing the difference in the average sale price by number of 
 
 **My Approach**:
   - Store in dataframe called `price_by_rooms`, groupby("bedrooms"), agg. the "sales price" by mean and variance and round the results by 1
-   - Visualize the relationaship of bedroom (x) and average sales price/variance (y) with bar chart + trend  line (not part of the task)
+   - Visualize the relationaship of bedroom (x) and average sales price/variance (y) with bar chart + trend  line (not part of the grading)
 
      
 In perspective, the goal of this task was to investigate the relationship between the number of bedrooms and house prices, focusing on two key metrics:
-1. **Average Sale Price: Helps determine the typical price of houses based on the number of bedrooms.
+1. **Average Sale Price: Helps determine the typical price of houses based on the number of bedrooms. 
 2. **Variance in Sale Price: Indicates the spread or variability of house prices within each bedroom category.
 
-### Tasks 4 & 5: Model Implementation
-**My Approach to Modeling**:
-1. **Pre-modeling Analysis**
-   - Feature selection based on cleaned data
-   - Split data ensuring representative samples
-   - Established baseline metrics
+### Task 4 & 5: Implement standard modeling approaches for supervised learning problems
 
-2. **Model Strategy**
-   - Focus on achieving RMSE < 30,000
-   - Selected models suitable for housing price prediction
-   - Implemented cross-validation for robust evaluation
+We are asked to use new dataset, train.csv (not the house_sales.csv that we prep) and use validation.csv to predict new values. Show df results for x 'house_id', y 'price'
+Also, this is just focus on getting a baseline model working (no error metrics conducted
 
-## Key Insights and Decisions
-1. **Data Quality**
-   - Missing data patterns varied significantly by column
-   - Text standardization was crucial for accurate analysis
-   - Date formats needed careful handling
+**Task 4 approach**:
 
-2. **Modeling Considerations**
-   - Feature engineering importance
-   - Balance between model complexity and performance
-   - Focus on RMSE optimization
+**0. Define the Problem**
+   - Target Variable (Y) is sales_price (continuous variable, making linear regression appropriate).
+   - Features (X): All columns except house_id, sale_price, and sale_date
+   - import sklearn
+     
+**1. Load the datasets**
+```
+train_data = pd.read_csv('train.csv')
+validation_data = pd.read_csv('validation.csv')
+```
+**2. Prepare training data**
+```
+X_train = train_data.drop(columns=['house_id', 'sale_price', 'sale_date'])
+y_train = train_data['sale_price']
+```
+**4. Create preprocessing pipeline**
 
-## Lessons Learned
-1. **Data Cleaning**
-   - Importance of thorough initial data inspection
-   - Value of systematic pattern detection
-   - Need for column-specific cleaning approaches
+**5. Create and train model pipeline**
 
-2. **Model Development**
-   - Feature selection impact on RMSE
-   - Importance of validation strategy
-   - Balance of model complexity vs performance
+**6. Fit the model**
 
-## Future Improvements
-- Enhanced missing value detection patterns
-- More sophisticated text standardization
-- Additional feature engineering possibilities
+**7. Prepare validation data**
+
+**8. Make predictions**
+
+**9. Create result dataframe**
