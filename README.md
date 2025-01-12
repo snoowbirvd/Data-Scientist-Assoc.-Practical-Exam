@@ -1,6 +1,13 @@
 # DSA Practical Exam
 Note: I didn't upload the notebook file here but here's the overview of how I approach the test. Please refer to Practical Exam.pdf
 
+RealAgents is a real estate company that focuses on selling houses.
+RealAgents sells a variety of types of house in one metropolitan area.
+Some houses sell slowly and sometimes require lowering the price in order to find a buyer.
+In order to stay competitive, RealAgents would like to optimize the listing prices of the houses it is trying to sell.
+They want to do this by predicting the sale price of a house given its characteristics.
+If they can predict the sale price in advance, they can decrease the time to sale.
+
 **Project Instructions:**
 - Use Python to perform each of the tasks (5 Tasks).
 - The object you have been asked to create will be graded, not the code.
