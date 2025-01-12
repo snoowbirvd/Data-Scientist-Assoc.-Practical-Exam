@@ -36,8 +36,8 @@ Producing a table showing the difference in the average sale price by number of 
    - Visualize the relationaship of bedroom (x) and average sales price/variance (y) with bar chart + trend  line (not part of the grading)
      
 This task was just to investigate the relationship between the number of bedrooms and house prices, focusing on two key metrics:
-1. **Average Sale Price: Helps determine the typical price of houses based on the number of bedrooms. 
-2. **Variance in Sale Price: Indicates the spread or variability of house prices within each bedroom category.
+1. **Average Sale Price:** Helps determine the typical price of houses based on the number of bedrooms. 
+2. **Variance in Sale Price:** Indicates the spread or variability of house prices within each bedroom category.
 
 ### Task 4: Implement standard modeling approaches for supervised learning problems
 
