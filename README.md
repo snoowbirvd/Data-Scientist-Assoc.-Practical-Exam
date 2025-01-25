@@ -1,5 +1,5 @@
 # DSA Practical Exam
-Note: I did not upload the notebook file here to avoid any cheating references. However, here is an overview of how I approached the test for personal documentation purposes
+Here is an overview of how I approached the test for documentation purposes
 
 RealAgents is a real estate company that focuses on selling houses.
 RealAgents sells a variety of types of house in one metropolitan area.
